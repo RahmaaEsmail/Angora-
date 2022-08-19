@@ -13,10 +13,16 @@
     left: 0;
     background-color: #1f2528;
 }
-.homeColor{
-    color: var(--main-color) !important;
+.home .content img{
+    height: 100vh;
 }
-.hover:hover{
+.navbar-dark .navbar-toggler-icon{
+    background-image: unset;
+}
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 0 !important;
+}
+.hover:hover ,.homeColor{
     color: var(--main-color) !important;
 }
 .home .carousel-inner{
@@ -30,7 +36,7 @@
     z-index: 99;
     position: relative;
 }
-.leftPart{
+.home .leftPart{
     position: absolute;
     left: 0;
     top: 50%;
@@ -40,12 +46,12 @@
    position: unset;
    border: 1px solid white;
     width: unset;
-}
+} 
 .btnContent{
     position: relative;
     padding: 10px;
 }
-.layer-btn{
+.home .layer-btn{
     position: absolute;
     top: 0;
     left: 0;
@@ -62,10 +68,10 @@
     color: var(--main-color);
 }
 
-.content{
+.home .content{
     position: relative;
 }
-.content h1{
+.home .content h1{
     font-size: 70px;
     font-weight: 700;
     position: absolute;
