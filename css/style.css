@@ -1,0 +1,317 @@
+:root{
+    --main-color:#f25454;
+}
+/* home */
+.home{
+    height: 100vh !important;
+    position: relative;
+}
+.gears{
+    position: fixed;
+    z-index: 333;
+    top: 30%;
+    left: 0;
+    background-color: #1f2528;
+}
+.homeColor{
+    color: var(--main-color) !important;
+}
+.hover:hover{
+    color: var(--main-color) !important;
+}
+.home .carousel-inner{
+    height: 100%;
+}
+.home #carouselExampleControls{
+    height: 100%;
+}
+.home .carousel-control-next-icon,.home .carousel-control-prev-icon{
+    background-image: unset;
+    z-index: 99;
+    position: relative;
+}
+.leftPart{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.home .carousel-control-prev,.home .carousel-control-next{
+   opacity: 1;
+   position: unset;
+   border: 1px solid white;
+    width: unset;
+}
+.btnContent{
+    position: relative;
+    padding: 10px;
+}
+.layer-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 100%;
+    background-color: white;
+    transition: all 0.5s;
+}
+.home .carousel-control-prev:hover .layer-btn ,.home .carousel-control-next:hover .layer-btn{
+    right: 0;
+}
+.home .carousel-control-prev:hover .carousel-control-prev-icon i,.home .carousel-control-next:hover .carousel-control-next-icon i
+{
+    color: var(--main-color);
+}
+
+.content{
+    position: relative;
+}
+.content h1{
+    font-size: 70px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%);
+    transition: all 2s;
+}
+
+/* end home */
+
+/* start about */
+.headerContent{
+    position: relative;
+}
+.letter{
+    font-size: 100px;
+    color: rgba(204, 204, 204,0.3);
+}
+.layer-letter{
+    position: absolute;
+    font-size: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 50%;
+}
+.brdr{
+    background-color: black;
+    width: 80px;
+    height: 1px;
+    transition: all 0.5s;
+}
+.headerContent:hover .brdr{
+   width: 100px;
+}
+
+.progress-bar1{
+    width: 90% !important;
+}
+
+.progress-bar2{
+    width: 80% !important;
+}
+.progress-bar3{
+    width: 70% !important;
+}
+.progress-bar{
+    background-color: #f25454 !important;
+}
+.progress{
+    height: 10px !important;
+}
+/* end about */
+
+/* start team */
+.member{
+    position: relative;
+}
+.layer-img{
+   position: absolute;
+   inset: 0;
+   background-color:rgba(242, 84, 84,0.7);
+   opacity: 0;
+   transition: all 0.5s;
+}
+.member img {
+    transition: all 0.5s;
+}
+.member:hover img{
+   transform: scale(1.1);
+}
+.member:hover .layer-img{
+    opacity: 1;
+}
+.name{
+    transition: all 0.5s;
+}
+.nameDesc:hover .name{
+    color: #f25454 !important;
+}
+.ask button{
+    background-color: #f25454;
+}
+/* end team*/
+
+/* start services */
+
+#services{
+    background-color: #fafafa;
+}
+.Iconservices{
+    color: var(--main-color);
+    font-size: 25px;
+} 
+.services h5{
+    transition: all .5s;
+}
+.services:hover h5{
+    color: var(--main-color);
+}
+/* end services */
+/* start clients */
+.clients{
+    overflow: hidden;
+   
+}
+.clients .carousel{
+    position: relative;
+    top: 50px !important;
+ }
+.clients .carousel-indicators{
+    position: absolute;
+}
+.clients .carousel-indicators img{
+    width:80px !important;
+    height: 80 px !important;
+    /* overflow: hidden; */
+    border-radius: 50%;   
+ }
+ .clients .carousel-indicators img.active{
+    width: 110px !important;
+    height:  110px !important;
+    border-radius: 50%;
+ }
+ .carousel-indicators [data-bs-target]
+ {
+    height: unset;
+ }
+
+ .clients .carousel .carousel-inner{
+    position: absolute;
+ }
+/* end clients */
+/* start footer */
+.footer{
+    background-color: #434343;
+    position: relative;
+}
+.icon-footer i{
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding-top: 27px;
+  padding-left:17px;
+  background-color:#f38383;
+  position: absolute;
+  margin: auto;
+  top: -3%;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: .5;
+  transition: all 1s;
+}
+.icon-footer:hover i{
+    background-color: #f25454;
+    opacity: 1;
+}
+.text-color{
+    color: #b0b0b0;
+}
+.links{
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 18px;
+}
+.links:hover{
+    color: var(--main-color);
+}
+.links:visited{
+    text-decoration: underline;
+}
+.btn2{
+    border-color: #b0b0b0;
+}
+.btn2:hover{
+    border-color:var(--main-color);
+}
+/* end footer */
+
+/* start section 8 */
+.footer-icon{
+    background-color: #1f2528;
+}
+.footer-icon i{
+    color: white;
+    transition: all .5s;
+}
+.footer-icon i:hover{
+    color: var(--main-color);
+}
+.bold-angora{
+    transition: all .5s;
+}
+.bold-angora:hover{
+    color: var(--main-color);
+}
+/* end section 8 */
+
+/* start contact */
+#contact{
+    background-color: #fafafa;
+}
+.iconContact{
+    color: var(--main-color);
+    font-size: 25px;
+}
+.item-contact h4{
+    transition: all .5s;
+}
+.item-contact:hover h4{
+    color: var(--main-color);
+}
+.item-contact:hover h4{
+    color: var(--main-color);
+}
+.item-contact p{
+    color: #333;
+}
+.color-hover:hover{
+    color: var(--main-color);
+}
+.focus:focus{
+    border:2px solid var(--main-color);
+}
+.form-control{
+    padding: 14px;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.form-control::placeholder{
+    color: #666;
+}
+.form-control{
+   border:  2px solid #eee;
+   background-color: white;
+}
+.form-control::placeholder{
+    color:  #ccc;
+}
+.btn-default{
+  background-color: #f25454 ; 
+}
+.btn-default:hover{
+    background-color: #f38383;
+
+}
+/* end contact */
